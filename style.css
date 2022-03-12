@@ -1,0 +1,166 @@
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+:root {
+  /* Colors */
+  --clr-black: 11 13 23;
+  --clr-blue: 20 33 61;
+  --clr-orange: 252 163 17;
+  --clr-gray: 229 229 229;
+  --clr-white: 255 255 255;
+
+  /* font-sizes */
+  --fs-130: 8.125rem;
+  --fs-116: 7.25rem;  
+  --fs-96: 6rem;
+  --fs-40: 2.5rem;
+  --fs-36: 2.25rem;
+  --fs-30: 1.875rem;
+  --fs-18: 1.125rem;
+  --fs-14: 0.875rem;
+
+  /* font-families */
+  --ff-serif: "Roboto Slab", serif;
+  --ff-sans-serif: "Montserrat", sans-serif;
+}
+
+
+
+
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+/*  Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* set up the body */
+
+body {
+  font-family: var(--ff-sans-serif);
+  font-size: var(var(--fs-18));
+  
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ---------------------- */
+/* Utility Classes        */
+/* ---------------------- */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;  /* added line */
+  border: 0;
+}
+
+/* colors */
+
+.bg-black { background-color: rgb( var(--clr-black));}
+.bg-blue { background-color: rgb( var(--clr-blue));}
+.bg-orange { background-color: rgb( var(--clr-orange));}
+.bg-gray { background-color: rgb( var(--clr-gray));}
+.bg-white { background-color:  gb( var(--clr-white));}
+
+.text-black { color: rgb( var(--clr-black));}
+.text-blue { color: rgb( var(--clr-blue));}
+.text-orange { color: rgb( var(--clr-orange));}
+.text-gray { color: rgb( var(--clr-gray));}
+.text-white { color: rgb( var(--clr-white));}
+
+/* typography */
+
+.ff-serif { font-family: var(--ff-serif); } 
+.ff-sans-serif { font-family: var(--ff-sans-serif); } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-130 { font-size: var(--fs-130); }
+.fs-116 { font-size: var(--fs-116); }
+.fs-96 { font-size: var(--fs-96); }
+.fs-40 { font-size: var(--fs-40); }
+.fs-36 { font-size: var(--fs-36); }
+.fs-30 { font-size: var(--fs-30); }
+.fs-18 { font-size: var(--fs-18); }
+.fs-14 { font-size: var(--fs-14); }
+
+.fs-130,
+.fs-116,
+.fs-96 {
+    line-height: 1.1;
+}
