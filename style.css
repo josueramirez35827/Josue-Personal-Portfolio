@@ -105,10 +105,14 @@ select {
   gap: var(--gap, 1rem);
 }
 
-
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
 }
 
 .container {
@@ -145,7 +149,10 @@ select {
 
 /* typography */
 
-.ff-serif { font-family: var(--ff-serif); } 
+/* Roboto Slab */
+.ff-serif { font-family: var(--ff-serif); }
+
+/* Montserrat */
 .ff-sans-serif { font-family: var(--ff-sans-serif); } 
 
 .uppercase { text-transform: uppercase; }
@@ -163,4 +170,15 @@ select {
 .fs-116,
 .fs-96 {
     line-height: 1.1;
+}
+
+.numbered-title {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-36);
+  text-transform: uppercase;
+}
+
+.numbered-title span {
+  margin-right: .5em;
+  color: rgb( var(--clr-blue));
 }

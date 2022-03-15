@@ -3,7 +3,7 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
-    <title>Design system</title>
+    <title>Design System</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +13,101 @@
 
   </head>
 
-  <body class="bg-white text-black">
+  <body class="bg-white text-black ff-serif">
+
     <div class="container">
-      <h1>Design System</h1>
-      <section id="colors">
-        <h2><span>01</span> Colors</h2>
-        <div>
-          <div class= "bg-black text-white" style="padding: 3rem 1rem 1rem; border: 1px solid white">
-            #0B0D17
+      <h1 class="uppercase">Design System</h1>
+
+      <section class="flow" id="colors" style="margin: 4rem 0;">
+        <h2 class="numbered-title"><span>01</span>Colors</h2>
+        <div class="flex">
+          <div style="flex-grow: 1;">
+            <div class= "bg-black text-white" style="padding: 10rem 1rem 10rem 3rem; border: 1px solid white">#0B0D17</div>
+            <p>RGB 11, 13, 23</p>
           </div>
-          <p>RGB 11, 13, 23</p>
-          <div class= "bg-blue text-white" style="padding: 3rem 1rem 1rem; border: 1px solid white">
-            #14213D
+          <div style="flex-grow: 1;">
+            <div class= "bg-blue text-white" style="padding: 10rem 1rem 10rem 3rem; border: 1px solid white">#14213D</div>
+            <p>RGB 20, 33, 61</p>
           </div>
-          <p>RGB 20, 33, 61</p>
-          <div class= "bg-orange text-black" style="padding: 3rem 1rem 1rem; border: 1px solid white">
-            #FCA311
+          <div style="flex-grow: 1;">
+            <div class= "bg-orange text-black" style="padding: 10rem 1rem 10rem 3rem; border: 1px solid white">#FCA311</div>
+            <p>RGB 252, 163, 17</p>
           </div>
-          <p>RGB 252, 163, 17</p>
-          <div class= "bg-gray text-black" style="padding: 3rem 1rem 1rem; border: 1px solid white">
-            #E5E5E5
+          <div style="flex-grow: 1;">
+            <div class= "bg-gray text-black" style="padding: 10rem 1rem 10rem 3rem; border: 1px solid white">#E5E5E5</div>
+            <p>RGB 229, 229, 229</p>
           </div>
-          <p>RGB 229, 229, 229</p>
-          <div class= "bg-white text-black" style="padding: 3rem 1rem 1rem; border: 1px solid black">
-            #FFFFFF
+          <div style="flex-grow: 1;">
+            <div class= "bg-white text-black" style="padding: 10rem 1rem 10rem 3rem; border: 1px solid black">#FFFFFF</div>
+            <p>RGB 255, 255, 255</p>
           </div>
-          <p>RGB 255, 255, 255</p>
         </div>
       </section>
+
+      <section id="typography" style="margin: 4rem 0">
+        <h2  class="numbered-title"><span>02</span>Typography</h2>
+        <div class="flex">
+
+          <div class= "flow" style="flex-basis: 100%">
+            <div>
+              <p class="text-blue">Heading 1 - Montserrat Bold - 130px</p>
+              <p class="fs-130 text-black ff-sans-serif">JOSUE</p>
+            </div>
+            <div>
+              <p class="text-blue">Heading 2 - Montserrat Bold - 116px</p>
+              <p class="fs-116 text-black ff-sans-serif">ABOUT</p>
+            </div>
+            <div>
+              <p class="text-blue">Heading 3 - Montserrat Bold - 96px</p>
+              <p class="fs-96 text-black ff-sans-serif">PROJECT</p>
+            </div>
+          </div>
+
+          <div class="flow" style="flex-basis: 100%">
+            <div>
+              <p class="text-blue">Subheading 1 - Roboto Slab  Semibold -  40px</p>
+              <p class="fs-40 text-black ff-serif">DESIGNER</p>
+            </div>
+            <div>
+              <p class="text-blue">Subheading 2 - Roboto Slab  Regular -  40px</p>
+              <p class="fs-40 text-black ff-serif">DESIGNER</p>
+            </div>
+            <div>
+              <p class="text-blue">Subheading 3 - Roboto Slab  Bold -  30px</p>
+              <p class="fs-30 text-black ff-serif">FEATURED PROJECT</p>
+            </div>
+            <div>
+              <p class="text-blue">Subheading 4 - Roboto Slab  Reuglar -  30px</p>
+              <p class="fs-30 text-black ff-serif">FEATURED PROJECT</p>
+            </div>
+            <div>
+             <p class="text-blue">Subheading 5 - Montserrat  Semibold -  36px</p>
+             <p class="fs-36 text-black ff-sans-serif">UX DESIGN</p>
+            </div>
+            <div>
+             <p class="text-blue">Subheading 6 - Montserrat  Semibold -  14px</p>
+             <p class="fs-14 text-black ff-sans-serif">UX DESIGN</p>
+            </div>
+            <div>
+             <p class="text-blue">Nav Text - Montserrat  Regular -  36px</p>
+             <p class="fs-36 text-black ff-sans-serif">RESUME</p>
+            </div>
+          </div>
+
+          <div class="flow" style="flex-basis: 100%">
+            <p class="text-blue">Body Text - Roboto Slab Regular -  18px</p>
+            <p class="text-black">"Just think about these things in your mind and drop em' on canvas. Let's make a happy little mountain now. I can't think of anything more rewarding than being able to express yourself to others through painting. From all of us here, I want to wish you happy painting and God bless, my friends. Of course he's a happy little stone, cause we don't have any other kind. If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. I can't think of anything more rewarding than being able to express yourself to others through painting. Working it up and down, back and forth. You can do it. Isn't it great to do something you can't fail at?" - Bob Ross (bc why not)</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="numbered-title"><span>03</span>Interactive Elements</h2>
+      </section>
+
     </div>
     <script src="script.js"></script>
+
   </body>
 
 </html>
