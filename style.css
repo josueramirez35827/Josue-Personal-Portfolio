@@ -17,6 +17,7 @@
   --fs-40: 2.5rem;
   --fs-36: 2.25rem;
   --fs-30: 1.875rem;
+  --fs-24: 1.5rem;
   --fs-18: 1.125rem;
   --fs-14: 0.875rem;
 
@@ -155,6 +156,12 @@ select {
 /* Montserrat */
 .ff-sans-serif { font-family: var(--ff-sans-serif); } 
 
+/* font-weight */
+
+.fw-regular { font-weight: 400;}
+.fw-semibold { font-weight: 600;}
+.fw-bold { font-weight: 700;}
+
 .uppercase { text-transform: uppercase; }
 
 .fs-130 { font-size: var(--fs-130); }
@@ -163,6 +170,7 @@ select {
 .fs-40 { font-size: var(--fs-40); }
 .fs-36 { font-size: var(--fs-36); }
 .fs-30 { font-size: var(--fs-30); }
+.fs-24 { font-size: var(--fs-24); }
 .fs-18 { font-size: var(--fs-18); }
 .fs-14 { font-size: var(--fs-14); }
 
