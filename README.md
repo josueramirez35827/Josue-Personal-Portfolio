@@ -12,7 +12,9 @@ HTML, CSS, JavaScript
 
 # Other Materials Used
 VScode
+
 Figma
+
 Link to wireframe: https://www.figma.com/file/BSCa5aWRFjSYwQABObalNG/Portfolio-Update?node-id=0%3A1
 
 # Previous Digital Portfolio
